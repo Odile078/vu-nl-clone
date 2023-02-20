@@ -15,10 +15,6 @@ import Footer from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [menuIsOpen, setMenuIsOpen] = useState(false);
-
-  const handleOpenMenu = () => setMenuIsOpen(!menuIsOpen);
-
   return (
     <>
       <Head>

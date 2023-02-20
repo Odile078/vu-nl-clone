@@ -56,8 +56,10 @@ const Calendar = () => {
             ].map((e, i) => (
               <Link href="/" key={i} className="block">
                 <div className="w-56 p-4 space-y-3">
-                  <h5 className="text-lg text-brandBlue">{e.date}</h5>
                   <p className="text-base underline">{e.title}</p>
+                  {i == 1 && <p className="text-base underline">Workshop</p>}
+                  {i == 1 && <p className="text-base underline">Sport</p>}
+                  <h5 className="text-lg text-brandBlue">{e.date}</h5>
                   <p className="text-2xl">{e.description}</p>
                 </div>
               </Link>
