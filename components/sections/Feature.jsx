@@ -1,7 +1,14 @@
 import Link from "next/link";
 import Wrapper from "../Wrapper/Wrapper";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { FaGraduationCap } from "react-icons/fa";
+import {
+  FaGraduationCap,
+  FaLinkedinIn,
+  FaFacebookF,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
 const Feature = () => {
   return (
     <Wrapper className="bg-white ">
@@ -36,41 +43,70 @@ const Feature = () => {
           {
             title: "Featured",
             titleColor: "text-green-900",
-            list: [
-              "Home",
-              "Education",
-              "Research",
-              "About VU Amsterdam",
-              " University Library",
-              "VU Press Office",
-              "Alumni",
-            ],
+            list: ["Campus tour", "Study guide", "VU Magazine"],
           },
         ].map((e, i) => (
-          <div key={i} className="space-y-4 bg-white">
+          <div key={i} className="flex flex-col space-y-4 bg-white">
             <div>
               <Link
                 href="/"
                 className="flex items-center justify-between h-full p-4 bg-white"
               >
-                <span className={`text-2xl text-brandBlue ${e.titleColor}`}>
+                <span
+                  className={`text-[38px] leading-[56px] font-light text-brandBlue ${e.titleColor}`}
+                >
                   {e.title}
                 </span>
               </Link>
             </div>
-            <ul className="p-4 space-y-2 shadow-3xl">
-              {e?.list?.map((e, i) => (
-                <li key={i} className="">
-                  <Link
-                    href="/"
-                    className="flex items-center justify-between h-full bg-white"
-                  >
-                    <span className="text-base ">{e}</span>
-                    <AiOutlineArrowRight className="" />
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <div
+              className={`flex flex-col justify-between flex-1 bg-white ${
+                i == 2 ? "shadow-3xl" : ""
+              }`}
+            >
+              <ul className={`p-4 space-y-2  ${i == 2 ? "" : "shadow-3xl"}`}>
+                {e?.list?.map((e, i) => (
+                  <li key={i} className="">
+                    <Link
+                      href="/"
+                      className="flex items-center justify-between h-full bg-white"
+                    >
+                      <span className="text-lg leading-[30px] ">{e}</span>
+                      <AiOutlineArrowRight className="" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              {i == 2 && (
+                <ul className="flex gap-2 p-6">
+                  <li>
+                    <Link href="/" className="block p-1 rounded bg-brandBlue">
+                      <BsInstagram className="text-4xl text-white" />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="block p-1 rounded bg-brandBlue">
+                      <FaLinkedinIn className="text-4xl text-white" />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="block p-1 rounded bg-brandBlue">
+                      <FaFacebookF className="text-4xl text-white" />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="block p-1 rounded bg-brandBlue">
+                      <FaTwitter className="text-4xl text-white" />
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/" className="block p-1 rounded bg-brandBlue">
+                      <FaYoutube className="text-4xl text-white" />
+                    </Link>
+                  </li>
+                </ul>
+              )}
+            </div>
           </div>
         ))}
       </div>

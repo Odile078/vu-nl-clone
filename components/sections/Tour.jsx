@@ -4,10 +4,12 @@ import Wrapper from "../Wrapper/Wrapper";
 
 const Tour = () => {
   return (
-    <Wrapper>
+    <Wrapper className=" bg-[#faf7f5]">
       <div className="py-10 space-y-10">
-        <h2 className="text-3xl text-green-900">Take a look</h2>
-        <div className="grid grid-cols-2 gap-6">
+        <h2 className="text-[38px] leading-[56px] font-light text-brandGreen">
+          Take a look
+        </h2>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           {[
             {
               title: "VU Campus Tour",
@@ -16,10 +18,11 @@ const Tour = () => {
             <div
               key={i}
               div
-              className="flex flex-col justify-between p-4 bg-white h-52"
+              className="flex flex-col justify-between h-40 p-5 md:p-7.5 bg-white md:h-52"
             >
-              <h5 className="text-lg text-green-900">{e.title}</h5>
-
+              <h5 className="text-2xl leading-[36px] font-light text-brandGreen">
+                {e.title}
+              </h5>
               <div className="flex items-end justify-end w-full">
                 <AiOutlineArrowRight className="text-base" />
               </div>

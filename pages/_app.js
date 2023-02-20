@@ -34,7 +34,7 @@ export default function App({ Component, pageProps }) {
     <div
       className={`${roboto.variable} font-sans bg-brandGrey text-brandBlack relative top-0`}
     >
-      <div className="">
+      <div className="shadow-4xl">
         <Component {...pageProps} />
       </div>
     </div>

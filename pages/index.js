@@ -28,7 +28,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="pb-20 overflow-hidden">
+      <main className="overflow-hidden ">
         <Hero />
         <About />
         <Cta

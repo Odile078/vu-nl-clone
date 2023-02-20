@@ -25,6 +25,9 @@ module.exports = {
         brandBlack: "#333",
         brandBlue: "#0077b3",
         brandGrey: "#f2efed",
+        brandOrange: "#cc4100",
+        brandGreen: "#008053",
+        brandPurple: "#3b2171",
       },
       fontFamily: {
         sans: ["var(--font-roboto)", ...fontFamily.sans],

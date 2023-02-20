@@ -2,11 +2,12 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
 import Wrapper from "../Wrapper/Wrapper";
+import { MdArrowForwardIos, MdOutlineArrowBackIosNew } from "react-icons/md";
 const WeAre = () => {
   return (
     <Wrapper className="bg-white ">
       <div className="py-10 space-y-10">
-        <h2 className="text-3xl text-orange-600">We are VU Amsterdam</h2>
+        <h2 className="text-3xl text-brandOrange">We are VU Amsterdam</h2>
         <div className="overflow-hidden">
           <div className="flex flex-nowrap">
             {[
@@ -30,9 +31,9 @@ const WeAre = () => {
               <Link
                 key={i}
                 href="/"
-                className="flex w-5/6 transition-all duration-200 ease-in-out hover:shadow-3xl all lg:w-96"
+                className="flex transition-all duration-200 ease-in-out w-96 hover:shadow-3xl all lg:w-96"
               >
-                <div className="w-5/6 p-5 space-y-6 bg-white lg:w-96">
+                <div className="p-5 space-y-6 bg-white w-60 lg:w-96">
                   <Image
                     src={e.img}
                     width={600}
@@ -50,6 +51,12 @@ const WeAre = () => {
                 </div>
               </Link>
             ))}
+          </div>
+          <div className="flex justify-end mt-6">
+            <div className="flex items-center gap-4 p-4 bg-[#fcd3b6]">
+              <MdOutlineArrowBackIosNew />
+              <MdArrowForwardIos />
+            </div>
           </div>
         </div>
 

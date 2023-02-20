@@ -1,43 +1,43 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/public/images/VU-logo-nobg.svg";
-import { RiSearchLine, RiUser3Fill } from "react-icons/ri";
+import { RiSearchLine, RiUser3Line } from "react-icons/ri";
 import { BiMenu } from "react-icons/bi";
 import Wrapper from "../Wrapper/Wrapper";
 
 const Header = () => {
   return (
     <header className="h-[75px] mx-auto max-w-5.5xl relative">
-      <div className="fixed w-full z-30 h-[75px] shadow-3xl top-0 max-w-5.5xl m-auto flex bg-white">
-        <nav className="flex items-center justify-between w-full bg-white">
+      <div className="fixed w-full z-30 h-[75px]  top-0 max-w-5.5xl m-auto flex bg-white">
+        <nav className="flex items-center justify-between w-full bg-white shadow-3xl">
           <div className="ml-5 md:ml-[30px]">
             <Link href={"/"} className="block">
               <Image
                 src={Logo}
                 alt="logo"
-                className="object-cover object-center"
+                className="object-cover object-center "
               />
             </Link>
           </div>
-          <ul className="flex gap-[30px] px-5 md:px-[30px] bg-brandGrey h-full items-center">
+          <ul className="flex gap-2 md:gap-[30px] px-5 md:px-[30px] bg-brandGrey h-full items-center">
             <li>
-              <Link href="/" className="block text-2xl text-brandBlack">
+              <Link href="/" className="block text-2xl font-light">
                 NL
               </Link>
             </li>
             <li>
               <Link href="/" className="block">
-                <RiUser3Fill className="text-brandBlack" />
+                <RiUser3Line className="text-xl text-brandBlack" />
               </Link>
             </li>
             <li>
               <Link href="/" className="block">
-                <RiSearchLine className="text-brandBlack" />
+                <RiSearchLine className="text-xl" />
               </Link>
             </li>
             <li>
               <button>
-                <BiMenu className="text-brandBlack" />
+                <BiMenu className="mt-1 text-2xl text-brandBlack" />
               </button>
             </li>
           </ul>
