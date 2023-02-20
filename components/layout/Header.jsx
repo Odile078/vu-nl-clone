@@ -7,7 +7,7 @@ import Wrapper from "../Wrapper/Wrapper";
 
 const Header = () => {
   return (
-    <header className="h-[75px] mx-auto max-w-5.5xl realtive">
+    <header className="h-[75px] mx-auto max-w-5.5xl relative">
       <div className="fixed w-full z-30 h-[75px] shadow-3xl top-0 max-w-5.5xl m-auto flex bg-white">
         <nav className="flex items-center justify-between w-full bg-white">
           <div className="ml-5 md:ml-[30px]">

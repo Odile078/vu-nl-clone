@@ -31,7 +31,9 @@ const roboto = localFont({
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className={`${roboto.variable} font-sans bg-brandGrey relative top-0`}>
+    <div
+      className={`${roboto.variable} font-sans bg-brandGrey text-brandBlack relative top-0`}
+    >
       <div className="">
         <Component {...pageProps} />
       </div>

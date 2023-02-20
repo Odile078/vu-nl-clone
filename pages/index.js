@@ -3,6 +3,15 @@ import { Inter } from "@next/font/google";
 import { useEffect, useState } from "react";
 import Header from "@/components/layout/Header";
 import Hero from "@/components/sections/Hero";
+import About from "@/components/sections/About";
+import Cta from "@/components/sections/Cta";
+import Impact from "@/components/sections/Impact";
+import News from "@/components/sections/News";
+import Calendar from "@/components/sections/Calendar";
+import WeAre from "@/components/sections/WeAre";
+import Tour from "@/components/sections/Tour";
+import Feature from "@/components/sections/Feature";
+import Footer from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -19,10 +28,26 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="">
+      <main className="pb-20 overflow-hidden">
         <Hero />
+        <About />
+        <Cta
+          title="Do you also want to change your world?"
+          action="Visit the VU Master’s Event"
+          white={true}
+        />
+        <Impact />
+        <News />
+        <Calendar />
+        <Cta
+          title="Working at VU Amsterdam?"
+          action="Take a look at our vacancies!"
+        />
+        <WeAre />
+        <Tour />
+        {/* <Feature /> */}
       </main>
-      <footer></footer>
+      <Footer />
     </>
   );
 }
