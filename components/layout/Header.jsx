@@ -70,7 +70,7 @@ const Header = () => {
       </div>
 
       {menuIsOpen ? (
-        <section className="fixed inset-0 z-50 grid h-screen mx-auto bg-white max-w-7xl">
+        <section className="fixed inset-0 z-50 grid h-screen mx-auto bg-white max-w-5.5xl 3xl:max-w-[1252px] 4xl:max-w-[1600px] ">
           <div className="overflow-y-auto">
             <div
               onClick={handleOpenMenu}
