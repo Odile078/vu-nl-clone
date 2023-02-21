@@ -7,10 +7,10 @@ import { RxDotFilled } from "react-icons/rx";
 const Impact = () => {
   return (
     <div>
-      <Wrapper>
-        <div className="py-10 space-y-10">
-          <h2 className="text-[38px] leading-[56px] font-light text-brandOrange">
-            impact
+      <Wrapper className=" bg-[#faf7f5]">
+        <div className="-mx-5 py-10 space-y-10">
+          <h2 className="px-5 text-[38px] leading-[56px] font-light text-brandOrange">
+            Impact
           </h2>
           <div className="h-[188px] md:h-[575px] relative">
             <Image
@@ -20,6 +20,12 @@ const Impact = () => {
               alt="person"
               className="object-cover object-center w-full h-[188px] md:h-[575px]"
             />
+            <div className="flex items-center justify-end gap-4 mt-6 absolute bottom-0 right-0 md:hidden">
+              <div className="flex items-center gap-4 p-4 bg-[#fcd3b6]">
+                <MdOutlineArrowBackIosNew className="cursor-pointer" />
+                <MdArrowForwardIos className="cursor-pointer" />
+              </div>
+            </div>
           </div>
           <div className="items-center justify-center md:flex">
             <div className="p-4 space-y-6 bg-white md:w-4/6 md:-mt-24 md:z-20">
@@ -37,7 +43,7 @@ const Impact = () => {
                 <span className="text-base font-bold">Read more</span>
                 <AiOutlineArrowRight className="text-base" />
               </Link>
-              <div className="flex items-center justify-end gap-4 mt-6">
+              <div className="hidden md:flex items-center justify-end gap-4 mt-6">
                 <div className="flex items-center">
                   <RxDotFilled className="text-6xl text-brandOrange" />
                   <RxDotFilled className="text-4xl text-orange-300" />
@@ -45,8 +51,8 @@ const Impact = () => {
                   <RxDotFilled className="text-4xl text-orange-300" />
                 </div>
                 <div className="flex items-center gap-4 p-4 bg-[#fcd3b6]">
-                  <MdOutlineArrowBackIosNew />
-                  <MdArrowForwardIos />
+                  <MdOutlineArrowBackIosNew className="cursor-pointer" />
+                  <MdArrowForwardIos className="cursor-pointer" />
                 </div>
               </div>
             </div>
@@ -54,9 +60,9 @@ const Impact = () => {
         </div>
       </Wrapper>
       <Wrapper className="bg-white ">
-        <div className="grid grid-cols-1 gap-3 px-10 py-[90px] xl:grid-cols-2">
+        <div className="grid grid-cols-1 gap-3 md:px-10 py-7.5 md:py-[60px] xl:py-[90px] xl:grid-cols-2">
           <Link href="/" className="flex">
-            <div className="w-full p-[25px] px-7.5 space-y-6 bg-white shadow-3xl">
+            <div className="w-full py-[25px] px-7.5 flex flex-col gap-5 bg-white shadow-3xl">
               <h5 className="text-[24px] leading-[36px] text-brandGreen font-light">
                 Ukraine
               </h5>
@@ -64,17 +70,17 @@ const Impact = () => {
                 Information and support
               </p>
               <div className="flex items-end justify-end w-full">
-                <AiOutlineArrowRight className="text-base" />
+                <AiOutlineArrowRight className="text-base ml-[15px] mt-[5px]" />
               </div>
             </div>
           </Link>
           <Link href="/" className="flex">
-            <div className="w-full p-4 space-y-6 bg-white shadow-3xl">
+            <div className="w-full py-[25px] px-7.5 flex flex-col justify-between gap-5 bg-white shadow-3xl">
               <h5 className="text-[24px] leading-[36px] font-light text-brandPurple">
                 VU & Corona
               </h5>
               <div className="flex items-end justify-end w-full">
-                <AiOutlineArrowRight className="text-base" />
+                <AiOutlineArrowRight className="text-base ml-[15px] mt-[5px]" />
               </div>
             </div>
           </Link>

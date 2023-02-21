@@ -7,7 +7,8 @@ import Wrapper from "../Wrapper/Wrapper";
 import { useEffect, useState } from "react";
 import { AiOutlinePlus } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
-
+import { CiUser, CiSearch } from "react-icons/ci";
+import { MdClose } from "react-icons/md";
 const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
@@ -17,8 +18,8 @@ const Header = () => {
     return () => (document.body.style.overflow = "scroll");
   }, [menuIsOpen]);
   return (
-    <header className="h-[75px] mx-auto max-w-5.5xl relative">
-      <div className="fixed w-full z-30 h-[75px]  top-0 max-w-5.5xl m-auto flex bg-white">
+    <header className="h-[75px] mx-auto max-w-5.5xl 3xl:max-w-[1252px] 4xl:max-w-[1600px] relative">
+      <div className="fixed w-full z-30 h-[75px]  top-0 max-w-5.5xl 3xl:max-w-[1252px] 4xl:max-w-[1600px] m-auto flex bg-white">
         <nav className="flex items-center justify-between w-full bg-white shadow-3xl">
           <div className="ml-5 md:ml-[30px]">
             <Link href={"/"} className="block">
@@ -37,17 +38,31 @@ const Header = () => {
             </li>
             <li>
               <Link href="/" className="block">
-                <RiUser3Line className="text-xl text-brandBlack" />
+                <CiUser className="text-2xl text-brandBlack " />
               </Link>
             </li>
             <li>
               <Link href="/" className="block">
-                <RiSearchLine className="text-xl" />
+                <CiSearch className="text-2xl  text-brandBlack" />
               </Link>
             </li>
             <li>
               <button onClick={handleOpenMenu}>
-                <RiMenuFill className="mt-1 text-2xl text-brandBlack" />
+                {/* <RiMenuFill className="mt-1 text-2xl text-brandBlack" /> */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.1}
+                  stroke="currentColor"
+                  className="w-8 h-8 text-brandBlack"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
               </button>
             </li>
           </ul>
@@ -59,20 +74,9 @@ const Header = () => {
           <div className="overflow-y-auto">
             <div
               onClick={handleOpenMenu}
-              className="bg-[#F2EFED] ml-auto p-5 cursor-pointer absolute top-0 right-0"
+              className="bg-[#F2EFED] ml-auto p-5 cursor-pointer absolute top-0 right-0 group"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className=""
-                width="30px"
-                height="30px"
-                viewBox="0 0 64 64"
-                fill="none"
-                stroke="#000000"
-              >
-                <line x1="16" y1="16" x2="48" y2="48" />
-                <line x1="48" y1="16" x2="16" y2="48" />
-              </svg>
+              <MdClose className="text-4xl group-hover:rotate-180 transform rotate-icon duration-700 ease-in-out " />
             </div>
             <div className="">
               <div className="flex flex-col justify-between space-y-10 cursor-pointer pt-52 px-36">
@@ -106,6 +110,7 @@ const Header = () => {
           </div>
         </section>
       ) : null}
+      <div className=""></div>
     </header>
   );
 };

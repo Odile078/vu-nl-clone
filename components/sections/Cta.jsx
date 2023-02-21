@@ -3,10 +3,15 @@ import Wrapper from "../Wrapper/Wrapper";
 
 const Cta = ({ title, action, white }) => {
   return (
-    <Wrapper className={` p-6 ${white ? "bg-white" : ""}`}>
-      <div className="flex flex-col justify-between gap-3 p-12 px-6 py-10 m-3 bg-brandBlue md:flex-row md:items-center">
-        <p className="text-2xl font-bold text-white">{title}</p>
-        <Link href="/" className="block px-6 py-4 text-2xl font-bold bg-white">
+    <Wrapper className={` px-5 py-7.5 md:py-[60px] ${white ? "bg-white" : ""}`}>
+      <div className="flex flex-col justify-between gap-3 px-5 md:px-[60px] pt-7.5 md:pt-[45px] pb-[45px] bg-brandBlue md:flex-row md:items-center">
+        <p className="text-2xl leading-[36px] font-semibold text-white text-center md:text-start">
+          {title}
+        </p>
+        <Link
+          href="/"
+          className="block py-[15px] px-7.5 text-2xl leading-[30px] font-semibold bg-white text-center md:text-start"
+        >
           {action}
         </Link>
       </div>

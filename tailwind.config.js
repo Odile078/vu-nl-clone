@@ -35,6 +35,10 @@ module.exports = {
       maxWidth: {
         "5.5xl": "1028px",
       },
+      screens: {
+        "3xl": "1400px", //max-width: 1252px;
+        "4xl": "1920px", //max-width: 1600px;
+      },
       spacing: {
         7.5: "1.875rem", //30px
       },

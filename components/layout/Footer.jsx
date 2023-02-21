@@ -7,7 +7,7 @@ const Footer = () => {
     <footer>
       <Feature />
       <Wrapper className=" bg-brandBlue py-7.5">
-        <ul className="flex flex-wrap  gap-[15px]">
+        <ul className="flex flex-wrap gap-x-[15px]  md:gap-[15px]">
           {[
             "Privacy Statement",
             "Disclaimer",
@@ -22,14 +22,16 @@ const Footer = () => {
                 href="/"
                 className="flex items-center justify-between gap-[5px]"
               >
-                <span className="text-sm text-white ">{e}</span>
+                <span className="text-base leading-[27px] text-white ">
+                  {e}
+                </span>
                 <AiOutlineArrowRight className="text-base text-white" />
               </Link>
             </li>
           ))}
         </ul>
         <div className="mt-6">
-          <span className="text-base text-white">
+          <span className="text-base leading-[27px] text-white">
             Copyright © 2023 - Vrije Universiteit Amsterdam
           </span>
         </div>

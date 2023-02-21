@@ -13,7 +13,7 @@ const Hero = () => {
         </div>
       </Wrapper>
       <Wrapper className="bg-white ">
-        <div className="grid 2xl:max-w-[83%] grid-cols-1 mx-auto shadow-3xl md:grid-cols-2 md:-mb-10">
+        <div className="-mx-5 grid 2xl:max-w-[83%] grid-cols-1 md:mx-auto shadow-3xl md:grid-cols-2 md:-mb-10">
           <div className="p-6 bg-brandBlue ">
             <form className="flex items-center justify-between border-b border-white">
               <div>

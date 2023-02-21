@@ -12,7 +12,7 @@ import { BsInstagram } from "react-icons/bs";
 const Feature = () => {
   return (
     <Wrapper className="bg-white ">
-      <div className="grid grid-cols-1 gap-3 py-10 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-3 -mx-3 md:mx-0  py-10 md:grid-cols-3">
         {[
           {
             title: "VU main menu",
@@ -61,10 +61,10 @@ const Feature = () => {
             </div>
             <div
               className={`flex flex-col justify-between flex-1 bg-white ${
-                i == 2 ? "shadow-3xl" : ""
+                i == 2 ? "md:shadow-3xl" : ""
               }`}
             >
-              <ul className={`p-4 space-y-2  ${i == 2 ? "" : "shadow-3xl"}`}>
+              <ul className={`p-4 space-y-2  ${i == 2 ? "" : "md:shadow-3xl"}`}>
                 {e?.list?.map((e, i) => (
                   <li key={i} className="">
                     <Link
@@ -78,7 +78,7 @@ const Feature = () => {
                 ))}
               </ul>
               {i == 2 && (
-                <ul className="flex gap-2 p-6">
+                <ul className="flex gap-2 px-4 py-6">
                   <li>
                     <Link href="/" className="block p-1 rounded bg-brandBlue">
                       <BsInstagram className="text-4xl text-white" />

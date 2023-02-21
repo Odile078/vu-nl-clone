@@ -5,7 +5,7 @@ import Link from "next/link";
 const News = () => {
   return (
     <Wrapper className=" bg-[#faf7f5]">
-      <div className="py-10 space-y-10">
+      <div className="py-7.5 md:py-[60px] xl:py-[90px] space-y-[15px]">
         <h2 className="text-[38px] leading-[56px] font-light text-brandPurple">
           News
         </h2>
@@ -84,7 +84,7 @@ const News = () => {
             ))}
           </div>
         </div>
-        <div className="grid grid-cols-1 m-2 gap3 md:m-0 md:hidden">
+        <div className="grid grid-cols-1 gap-[35px] md:m-0 md:hidden">
           {[
             {
               img: "/images/2N3337X.jpeg",
@@ -112,7 +112,7 @@ const News = () => {
               title: "Earthquakes Turkey and Syria",
             },
           ].map((e, i) => (
-            <div key={i} className="flex gap-6 ">
+            <div key={i} className="flex gap-[15px] ">
               <Image
                 src={e.img}
                 width={600}
@@ -120,11 +120,13 @@ const News = () => {
                 alt="person"
                 className="object-cover object-center w-32 h-32"
               />
-              <div className="flex-1 p-4 space-y-6">
+              <div className="flex-1 space-y-6">
                 <h5 className="text-lg leading-[30px] font-bold text-brandPurple">
                   {e.date}
                 </h5>
-                <p className="text-lg leading-[30px] font-light">{e.title}</p>
+                <p className="text-lg leading-[30px] font-light mr-[25px]">
+                  {e.title}
+                </p>
                 <div className="flex items-end justify-end w-full">
                   <AiOutlineArrowRight className="text-base" />
                 </div>
@@ -137,7 +139,9 @@ const News = () => {
             href="/"
             className="flex items-center justify-between h-full gap-4 p-4 "
           >
-            <span className="text-base font-bold">News overview</span>
+            <span className="text-lg leading-[30px] font-medium">
+              News overview
+            </span>
             <AiOutlineArrowRight className="text-base" />
           </Link>
         </div>
