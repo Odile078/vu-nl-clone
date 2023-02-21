@@ -16,19 +16,27 @@ const WeAre = () => {
         <div className="-ml-52 flex flex-nowrap gap-7.5">
           {[
             {
-              img: "/images/2N3337X.jpeg",
+              img: "/images/hero_2200x720.png",
               title: "NWO Spinoza Prize winner Yvette van Kooyk",
+            },
+            {
+              img: "/images/face.jpg",
+              title: "Vrije Schrijver (Writer in Residence)",
+            },
+            {
+              img: "/images/pose.jpg",
+              title: "VU Dream Teams",
+            },
+            {
+              img: "/images/man.jpg",
+              title: "Gravitation Grant recipient Frank van Harmelen",
             },
             {
               img: "/images/2N3337X.jpeg",
               title: "NWO Spinoza Prize winner Yvette van Kooyk",
             },
             {
-              img: "/images/2N3337X.jpeg",
-              title: "NWO Spinoza Prize winner Yvette van Kooyk",
-            },
-            {
-              img: "/images/2N3337X.jpeg",
+              img: "/images/hero_2200x720.png",
               title: "NWO Spinoza Prize winner Yvette van Kooyk",
             },
           ].map((e, i) => (
@@ -37,7 +45,7 @@ const WeAre = () => {
               href="/"
               className="flex transition-all duration-200 ease-in-out w-96 hover:shadow-3xl all lg:w-96"
             >
-              <div className="space-y-6 bg-white w-52 lg:w-96">
+              <div className="space-y-6 bg-white w-52 lg:w-72">
                 <Image
                   src={e.img}
                   width={600}

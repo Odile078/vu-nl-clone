@@ -30,28 +30,28 @@ const Calendar = () => {
           <div className="flex gap-3 md:gap-20 flex-nowrap ">
             {[
               {
-                title: "PhD Defences",
+                title: "Other events",
                 date: "20 February 2023",
-                description: "PhD defence by T.J.H. Jonkers",
+                description: "ABRI Writing Boost",
               },
               {
-                title: "PhD Defences",
+                title: "Lectures",
                 date: "20 February 2023",
-                description: "PhD defence by T.J.H. Jonkers",
+                description: "ABRI lunch seminar Dr. Paula Jarzabkowski",
               },
               {
-                title: "PhD Defences",
+                title: "Social events",
                 date: "20 February 2023",
-                description: "PhD defence by T.J.H. Jonkers",
+                description: "Board game night - Life is Better in 3D",
               },
               {
-                title: "PhD Defences",
+                title: "Other events",
                 date: "20 February 2023",
-                description: "PhD defence by T.J.H. Jonkers",
+                description: "VU Pride TalkS!",
               },
             ].map((e, i) => (
               <Link href="/" key={i} className="block">
-                <div className=" w-40 md:w-56 space-y-3">
+                <div className=" w-40 md:w-56 space-y-1">
                   <p className="text-lg leading-[30px] font-light underline">
                     {e.title}
                   </p>

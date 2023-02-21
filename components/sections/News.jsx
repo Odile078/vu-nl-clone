@@ -9,8 +9,8 @@ const News = () => {
         <h2 className="text-[38px] leading-[56px] font-light text-brandPurple">
           News
         </h2>
-        <div className="hidden grid-cols-2 gap-3 md:grid">
-          <div className="grid grid-cols-1 gap-6">
+        <div className="hidden grid-cols-3 gap-10 md:grid">
+          <div className="grid grid-cols-1 col-span-2 gap-6">
             {[
               {
                 img: "/images/2N3337X.jpeg",
@@ -18,9 +18,9 @@ const News = () => {
                 title: "Earthquakes Turkey and Syria",
               },
               {
-                img: "/images/2N3337X.jpeg",
+                img: "/images/birds.png",
                 date: "08 Feb 2023",
-                title: "Earthquakes Turkey and Syria",
+                title: "Robot bird gives singing lessons to zebra finches",
               },
             ].map((e, i) => (
               <div key={i} className="grid grid-cols-2 gap-3">
@@ -45,25 +45,26 @@ const News = () => {
               </div>
             ))}
           </div>
-          <div className="grid grid-cols-1 m-2 gap3 md:m-0">
+          <div className="grid grid-cols-1 m-2 gap-3 md:m-0">
             {[
               {
-                img: "/images/2N3337X.jpeg",
+                img: "/images/flag.jpeg",
                 date: "08 Feb 2023",
-                title: "Earthquakes Turkey and Syria",
+                title:
+                  "EU grant to improve mental well-being of Ukrainian refugees",
               },
               {
-                img: "/images/2N3337X.jpeg",
+                img: "/images/city.jpeg",
                 date: "08 Feb 2023",
-                title: "Earthquakes Turkey and Syria",
+                title: "Sapiens partnership ended",
               },
               {
-                img: "/images/2N3337X.jpeg",
+                img: "/images/laughing.png",
                 date: "08 Feb 2023",
-                title: "Earthquakes Turkey and Syria",
+                title: "ERC Consolidator Grant for Wouter...",
               },
             ].map((e, i) => (
-              <div key={i} className="flex gap-6 ">
+              <div key={i} className="flex gap-3 ">
                 <Image
                   src={e.img}
                   width={600}
@@ -71,13 +72,16 @@ const News = () => {
                   alt="person"
                   className="object-cover object-center w-32 h-32"
                 />
-                <div className="flex-1 p-4 space-y-6">
+                <div className="flex-1  space-y-6">
                   <h5 className="text-lg leading-[30px] font-bold text-brandPurple">
                     {e.date}
                   </h5>
-                  <p className="text-lg leading-[30px] font-light">{e.title}</p>
-                  <div className="flex items-end justify-end w-full">
-                    <AiOutlineArrowRight className="text-base" />
+
+                  <div className="flex items-end gap-4 justify-between ">
+                    <p className="text-lg leading-[30px] font-light w-[80%]">
+                      {e.title}
+                    </p>
+                    <AiOutlineArrowRight className="text-base block" />
                   </div>
                 </div>
               </div>
@@ -92,24 +96,25 @@ const News = () => {
               title: "Earthquakes Turkey and Syria",
             },
             {
-              img: "/images/2N3337X.jpeg",
+              img: "/images/birds.png",
               date: "08 Feb 2023",
-              title: "Earthquakes Turkey and Syria",
+              title: "Robot bird gives singing lessons to zebra finches",
             },
             {
-              img: "/images/2N3337X.jpeg",
+              img: "/images/flag.jpeg",
               date: "08 Feb 2023",
-              title: "Earthquakes Turkey and Syria",
+              title:
+                "EU grant to improve mental well-being of Ukrainian refugees",
             },
             {
-              img: "/images/2N3337X.jpeg",
+              img: "/images/city.jpeg",
               date: "08 Feb 2023",
-              title: "Earthquakes Turkey and Syria",
+              title: "Sapiens partnership ended",
             },
             {
-              img: "/images/2N3337X.jpeg",
+              img: "/images/laughing.png",
               date: "08 Feb 2023",
-              title: "Earthquakes Turkey and Syria",
+              title: "ERC Consolidator Grant for Wouter...",
             },
           ].map((e, i) => (
             <div key={i} className="flex gap-[15px] ">
