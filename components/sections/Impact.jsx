@@ -28,7 +28,7 @@ const Impact = () => {
             </div>
           </div>
           <div className="items-center justify-center md:flex ">
-            <div className="p-4 md:px-7.5 py-[35px] space-y-6 bg-white md:w-4/6 md:-mt-24 md:z-20 card-cut">
+            <div className="p-4 md:px-7.5 py-[35px] space-y-6 bg-white md:w-4/6 md:-mt-24 xl:-mt-40 md:z-20 card-cut">
               <h5 className="text-[24px] leading-[36px] font-light text-brandOrange">
                 Science to impact
               </h5>
