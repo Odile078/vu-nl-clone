@@ -13,7 +13,7 @@ const WeAre = () => {
       </Wrapper>
 
       <div className="overflow-hidden ">
-        <div className="-ml-52 flex flex-nowrap gap-7.5">
+        <div className="-ml-52 flex flex-nowrap ">
           {[
             {
               img: "/images/hero_2200x720.png",
@@ -45,7 +45,7 @@ const WeAre = () => {
               href="/"
               className="flex transition-all duration-200 ease-in-out w-96 hover:shadow-3xl all lg:w-96"
             >
-              <div className="space-y-6 bg-white w-52 lg:w-72">
+              <div className="space-y-6 bg-white w-52 lg:w-80 px-[15px]">
                 <Image
                   src={e.img}
                   width={600}

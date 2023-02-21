@@ -12,7 +12,7 @@ import { BsInstagram } from "react-icons/bs";
 const Feature = () => {
   return (
     <Wrapper className=" bg-white shadow-4xl">
-      <div className="grid grid-cols-1 gap-3 -mx-3 md:mx-0  py-10 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-5 -mx-3 md:mx-0  py-10 md:grid-cols-3">
         {[
           {
             title: "VU main menu",
