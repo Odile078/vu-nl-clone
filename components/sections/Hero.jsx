@@ -5,14 +5,14 @@ import { RiSearchLine, RiUser3Fill } from "react-icons/ri";
 const Hero = () => {
   return (
     <section className="">
-      <Wrapper className="bg-white ">
+      <Wrapper className=" bg-white shadow-4xl">
         <div className="relative mx-2 md:mx-auto max-w-[80%] py-7.5  md:mx-10-">
           <h1 className="text-[33px] leading-[40px] md:text-[45px] md:leading-[60px] font-light">
             You don’t just become something, you become someone
           </h1>
         </div>
       </Wrapper>
-      <Wrapper className="bg-white ">
+      <Wrapper className=" bg-white">
         <div className="-mx-5 grid 2xl:max-w-[83%] grid-cols-1 md:mx-auto shadow-3xl md:grid-cols-2 md:-mb-10">
           <div className="p-6 bg-brandBlue ">
             <form className="flex items-center justify-between border-b border-white">

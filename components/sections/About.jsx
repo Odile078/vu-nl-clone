@@ -11,8 +11,8 @@ import { BsArrowRight } from "react-icons/bs";
 import Wrapper from "../Wrapper/Wrapper";
 const About = () => {
   return (
-    <>
-      <Wrapper className="bg-white ">
+    <div className="relative overflow-hidden">
+      <Wrapper className=" bg-white relative z-20">
         <div className="flex md:items-center justify-between px-2 gap-2 md:px-6 py-[15px] md:py-7.5 -mt-[60px]">
           {[
             {
@@ -48,8 +48,12 @@ const About = () => {
           ))}
         </div>
       </Wrapper>
-      <Wrapper className=" bg-white p-[85px]"></Wrapper>
-      <Wrapper>
+
+      <Wrapper className=" bg-white relative z-20">
+        <div className="p-[85px]"></div>
+      </Wrapper>
+      <Wrapper className=" shadow-none relative z-20">
+        {/* <div className="hidden md:block mx-auto z-10 absolute inset-0 h-full bg-[#faf7f5] w-5.5xl 3xl:w-[1252px] 4xl:w-[1700px]"></div> */}
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2 -mt-[200px] md:-mb-[10px] -mb[7.5px] py-[30px] md:py-[60px]">
           {[
             {
@@ -100,40 +104,12 @@ const About = () => {
               </ul>
             </div>
           ))}
-
-          {/* <div className="space-y-4 bg-white">
-            <div>
-              <Link
-                href="/"
-                className="flex items-center justify-between h-full p-4 bg-white"
-              >
-                <span className="text-2xl text-brandBlue">Research</span>
-                <AiOutlineArrowRight className="text-3xl text-brandBlue" />
-              </Link>
-            </div>
-            <ul className="p-4 space-y-2">
-              {[
-                "Research highlights",
-                "Valorisation",
-                "Bachelor's programmes",
-                "Bachelor's programmes",
-                "Bachelor's programmes",
-              ].map((e, i) => (
-                <li key={i} className="">
-                  <Link
-                    href="/"
-                    className="flex items-center justify-between h-full bg-white"
-                  >
-                    <span className="text-base ">{e}</span>
-                    <AiOutlineArrowRight className="" />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div> */}
         </div>
       </Wrapper>
-    </>
+      <Wrapper>
+        <div className="hidden md:block mx-auto z-10 absolute inset-0 h-full bg-[#faf7f5] w-5.5xl 3xl:w-[1252px] 4xl:w-[1600px]"></div>
+      </Wrapper>
+    </div>
   );
 };
 

@@ -4,7 +4,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import Link from "next/link";
 const News = () => {
   return (
-    <Wrapper className=" bg-[#faf7f5]">
+    <Wrapper className=" bg-[#faf7f5] shadow-4xl">
       <div className="py-7.5 md:py-[60px] xl:py-[90px] space-y-[15px]">
         <h2 className="text-[38px] leading-[56px] font-light text-brandPurple">
           News

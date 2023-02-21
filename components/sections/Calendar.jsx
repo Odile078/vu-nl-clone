@@ -8,12 +8,12 @@ import {
 import { AiOutlineArrowRight } from "react-icons/ai";
 const Calendar = () => {
   return (
-    <Wrapper className="bg-white ">
+    <Wrapper className=" bg-white shadow-4xl">
       <div className="py-7.5 md:py-[60px] xl:py-[90px] flex flex-col gap-y-10">
         <div className="flex flex-col justify-between gap-4 md:flex-row">
           <h2 className="text-3xl text-brandBlue">Calendar</h2>
           <div className="grid grid-cols-2 gap-3 md:grid-cols-2">
-            <div className="flex items-center justify-between px-5 py-[10px] shadow-3xl bg-white">
+            <div className="flex items-center justify-between gap-4 px-5 py-[10px] shadow-3xl bg-white">
               <p className="text-lg leading-[30px] font-medium">
                 All categories
               </p>
@@ -26,7 +26,7 @@ const Calendar = () => {
           </div>
         </div>
 
-        <div className="overflow-hidden">
+        <div className=" overflow-x-auto scroll-container">
           <div className="flex gap-3 md:gap-20 flex-nowrap ">
             {[
               {

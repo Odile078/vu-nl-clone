@@ -24,5 +24,16 @@
       opacity: 1;
     }
   }
+  @media (min-width: 640px) { 
+    .card-cut{ -webkit-clip-path: polygon(16% 0, 100% 0%, 100% 57%, 0 57%, 0 0, 10% 0, 14% 5%); clip-path: polygon(17% 0, 100% 0%, 100% 100%, 0 100%, 0 0, 11.2% 0, 14.1% 7%); }
   
+  }
+  .scroll-container {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .scroll-container::-webkit-scrollbar { 
+      display: none;  /* Safari and Chrome */
+  }
+ 
 }

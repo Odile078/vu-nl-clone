@@ -4,7 +4,7 @@ import Wrapper from "../Wrapper/Wrapper";
 
 const Tour = () => {
   return (
-    <Wrapper className=" bg-[#faf7f5]">
+    <Wrapper className=" bg-[#faf7f5] shadow-4xl">
       <div className="py-7.5 md:py-[60px] xl:py-[90px] space-y-10">
         <h2 className="text-[38px] leading-[56px] font-light text-brandGreen">
           Take a look

@@ -12,6 +12,7 @@ import WeAre from "@/components/sections/WeAre";
 import Tour from "@/components/sections/Tour";
 import Feature from "@/components/sections/Feature";
 import Footer from "@/components/layout/Footer";
+import Wrapper from "@/components/Wrapper/Wrapper";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -35,10 +36,14 @@ export default function Home() {
         <Impact />
         <News />
         <Calendar />
-        <Cta
-          title="Working at VU Amsterdam?"
-          action="Take a look at our vacancies!"
-        />
+        <Wrapper className=" bg-[#faf7f5] shadow-none">
+          <Cta
+            title="Working at VU Amsterdam?"
+            action="Take a look at our vacancies!"
+            className="shadow-none"
+          />
+        </Wrapper>
+
         <WeAre />
         <Tour />
         {/* <Feature /> */}

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <Feature />
-      <Wrapper className=" bg-brandBlue py-7.5">
+      <Wrapper className=" bg-brandBlue py-7.5 shadow-4xl">
         <ul className="flex flex-wrap gap-x-[15px]  md:gap-[15px]">
           {[
             "Privacy Statement",

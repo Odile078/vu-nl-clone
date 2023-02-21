@@ -6,7 +6,7 @@ import { MdArrowForwardIos, MdOutlineArrowBackIosNew } from "react-icons/md";
 const WeAre = () => {
   return (
     <div className="py-7.5 md:py-[60px] lg:py-[90px] space-y-10 bg-white max-w-5.5xl 3xl:max-w-[1252px] 4xl:max-w-[1600px] mx-auto">
-      <Wrapper className="bg-white ">
+      <Wrapper className=" bg-white shadow-4xl">
         <h2 className="text-3xl text-brandOrange font-light">
           We are VU Amsterdam
         </h2>

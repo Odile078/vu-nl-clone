@@ -26,7 +26,7 @@ const Header = () => {
               <Image
                 src={Logo}
                 alt="logo"
-                className="object-cover object-center "
+                className="object-cover object-center max-w-[140px]  md:max-w-full"
               />
             </Link>
           </div>

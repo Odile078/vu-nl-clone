@@ -7,7 +7,7 @@ import { RxDotFilled } from "react-icons/rx";
 const Impact = () => {
   return (
     <div>
-      <Wrapper className=" bg-[#faf7f5]">
+      <Wrapper className=" bg-[#faf7f5] shadow-4xl">
         <div className="-mx-5 py-10 space-y-10">
           <h2 className="px-5 text-[38px] leading-[56px] font-light text-brandOrange">
             Impact
@@ -27,8 +27,8 @@ const Impact = () => {
               </div>
             </div>
           </div>
-          <div className="items-center justify-center md:flex">
-            <div className="p-4 space-y-6 bg-white md:w-4/6 md:-mt-24 md:z-20">
+          <div className="items-center justify-center md:flex ">
+            <div className="p-4 md:px-7.5 py-[35px] space-y-6 bg-white md:w-4/6 md:-mt-24 md:z-20 card-cut">
               <h5 className="text-[24px] leading-[36px] font-light text-brandOrange">
                 Science to impact
               </h5>
@@ -59,7 +59,7 @@ const Impact = () => {
           </div>
         </div>
       </Wrapper>
-      <Wrapper className="bg-white ">
+      <Wrapper className=" bg-white shadow-4xl">
         <div className="grid grid-cols-1 gap-3 md:px-10 py-7.5 md:py-[60px] xl:py-[90px] xl:grid-cols-2">
           <Link href="/" className="flex">
             <div className="w-full py-[25px] px-7.5 flex flex-col gap-5 bg-white shadow-3xl">
