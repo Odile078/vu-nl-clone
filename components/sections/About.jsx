@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div className="relative overflow-hidden">
       <Wrapper className=" bg-white relative z-20">
-        <div className="flex md:items-center justify-between px-2 gap-2 md:px-6 py-[15px] md:py-7.5 -mt-[60px]">
+        <div className="flex md:items-center justify-between px-2 gap-2 md:px-6 py-[15px] md:py-7.5 md:-mt-[60px]">
           {[
             {
               icon: <FaGraduationCap className="text-3xl text-brandBlue" />,
